@@ -4,91 +4,75 @@
 }
 
 /*original style.css from here*/
-
 body {
   background-color: #333;
   font-family: sans-serif;
   font-size: 16px;
+  /*why is the font info in the body instead of the container or restaurant-list?*/
 }
 
 .container {
   margin: 0 auto;
-  height: 640px;
-  width: 420px;
-  /*wighth and height by percentage?*/
-  /*do I need padding and border?*/
+  width: 420px
 }
 
 nav {
-  background-color: black;
-  margin: 0 auto;
-  padding: 10px 0 15px 50px;
-  /*how did she get padding numbers?*/
+  padding: 10px;
   width: 100%;
-
+  background-color: black;
 }
 
-.arrow {
-  display: inline-block;
-  float: right;
-  margin-right: 10px;
-  margin-top: 22px;
 }
-
 .restaurant-list {
   width: 100%;
 }
 
 /*Nesting Code*/
-/*determine height for location*/
-div.location{
+.location{
   background-color: #dfdfdf;
   border-bottom: 1px solid #333;
-  height: 80px;
-  width: 100%;
+  height: 70px;
+  width: 100%
 }
 
-div.content {
+.content {
+  color: black;
   display: inline-block;
-  margin: 16px 0 0 0;
-  padding: 0 0 0 10px;
+  margin: 0px;
+  padding: 14px;
 }
 
-.header h1, .header h3 {
-color: #FFF;
+.header, h1 {
+  font-size: 1.1em;
+  font-weight: 550;
+
 }
 
-.header h1 {
-  font-size:2em;
-  font-weight: 700;
-}
-
-.header h3 {
-  font-size: 1em;
+.header, h3 {
+  font-size: 0.9em;
   font-weight: 300;
+
 }
 
-/*line-height*/
-h1 {
-  line-height: 150%;
-}
+.arrow {
+  font-size: 0.8em;
+  color: black;
+  float: right;
+  padding-right: 20px;
+  padding-top: 20px;
+ }
 
-/* Default Values*/
-body {
-  font-size: 16px;
-}
+ .arrow-left {
+   font-size: 0.8em;
+   margin: 5px;
+ }
 
-h1 {
-  font-size: 1.1em; /* 2em = 32px */
-}
+ /*additional*/
 
-h1 {font-weight: 550;
-}
+ h1, h3 {
+   line-height: 120%;
+ }
 
-h3 {
-  font-size: .9em;
-}
-
-p {
-  font-size: 100%; /* 16px */
-}
+ .location:hover {
+   background-color: #b3b3b3;
+   cursor: pointer;
